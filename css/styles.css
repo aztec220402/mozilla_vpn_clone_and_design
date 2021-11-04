@@ -1,0 +1,459 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Zilla Slab";
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background: #f7f7f7;
+}
+
+#navbar nav {
+  z-index: 100;
+  background: white;
+  height: 10vh;
+  padding: 0 1rem;
+  position: fixed;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navbar nav img {
+  height: 50%;
+}
+
+#navbar nav a {
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 1rem;
+  color: black;
+}
+
+#navbar nav a:hover {
+  text-decoration: underline;
+}
+
+#navbar nav .join {
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 0.5rem 2rem;
+  margin-right: 1rem;
+  font-weight: bolder;
+  color: black;
+  background: white;
+}
+
+#navbar nav .join:hover {
+  color: white;
+  background: black;
+  text-decoration: none;
+}
+
+#hero {
+  height: 90vh;
+  padding: 25vh 3rem;
+  margin-left: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#hero div {
+  width: 50%;
+  height: 100%;
+}
+
+#hero .intro {
+  padding-left: 8rem;
+}
+
+#hero .intro h1 {
+  font-size: 3.5rem;
+  line-height: 3.3rem;
+}
+
+#hero .intro h3 {
+  font-family: "Anka/Coder";
+  font-weight: normal;
+  margin: 3rem 0 3rem 0;
+  font-size: 1.5rem;
+}
+
+#hero .intro a {
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  color: white;
+  background: black;
+  -webkit-box-shadow: 8px 8px #a883f8;
+          box-shadow: 8px 8px #a883f8;
+}
+
+#hero .intro a:hover {
+  color: black;
+  background: white;
+  text-decoration: none;
+}
+
+#hero .hero-img img {
+  width: 70%;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+}
+
+#availibility {
+  margin: 5vw 10vw;
+  background: #a883f8;
+  color: white;
+  border: 2px solid black;
+  padding: 1rem;
+}
+
+#availibility h3 {
+  font-family: "Anka/Coder";
+}
+
+#availibility h3 span {
+  font-family: "Anka/Coder";
+  color: black;
+}
+
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 10vw;
+}
+
+#main .feature {
+  margin: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#main .feature img {
+  width: 50%;
+}
+
+#main .feature .desc {
+  margin: 0 5rem;
+}
+
+#main .feature .desc h1 {
+  font-size: 3.5rem;
+  line-height: 3.3rem;
+}
+
+#main .feature .desc h3 {
+  font-family: "Anka/Coder";
+  font-weight: normal;
+  margin: 3rem 0 3rem 0;
+  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+
+#main .feature .desc ul {
+  margin: 2rem 0;
+}
+
+#main .feature .desc ul li {
+  font-weight: bolder;
+  font-size: 1rem;
+  font-family: "Anka/Coder";
+  margin: 0.5rem;
+}
+
+#main .feature .desc a {
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 1rem 2rem;
+  font-size: 1.7rem;
+  font-weight: bolder;
+  color: white;
+  background: black;
+  -webkit-box-shadow: 8px 8px #a883f8;
+          box-shadow: 8px 8px #a883f8;
+}
+
+#main .feature .desc a:hover {
+  color: black;
+  background: white;
+  text-decoration: none;
+}
+
+#main .contain {
+  position: relative;
+}
+
+#main .contain .m-content {
+  background: #e2e2e2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem 0;
+}
+
+#main .contain .m-content img {
+  width: 40%;
+  margin-bottom: 2rem;
+}
+
+#main .contain .m-content .desc {
+  width: 50%;
+  margin: 0 5rem;
+}
+
+#main .contain .m-content .desc h1 {
+  font-size: 3.5rem;
+  line-height: 3.3rem;
+}
+
+#main .contain .m-content .desc h3 {
+  font-family: "Anka/Coder";
+  font-weight: normal;
+  margin: 3rem 0 3rem 0;
+  font-size: 1.5rem;
+}
+
+#main .contain .outline {
+  border: 5px solid black;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+hr {
+  border: 2px solid black;
+  height: 0;
+  margin: 10vw;
+  background: black;
+}
+
+#faq {
+  margin: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#faq h1 {
+  font-size: 3.5rem;
+  line-height: 3.3rem;
+}
+
+#faq .ques {
+  border: 2px solid black;
+  text-align: left;
+  width: 50vw;
+  margin: 1.5rem;
+  -webkit-box-shadow: 1rem 1rem black;
+          box-shadow: 1rem 1rem black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 2rem;
+}
+
+#faq .ques h3 {
+  margin: 1.5rem;
+}
+
+#faq h6 {
+  margin-top: 2rem;
+  font-weight: lighter;
+}
+
+#footer {
+  color: white;
+  background: black;
+  padding: 5vw 10vw;
+}
+
+#footer .footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer .footer-top table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+#footer .footer-top table tr th {
+  font-family: "Anka/Coder";
+  padding-bottom: 1.5rem;
+}
+
+#footer .footer-top table tr td {
+  padding: 0.5rem 5rem;
+  margin: 5rem;
+}
+
+#footer .footer-top table tr td a {
+  font-family: "Anka/Coder";
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: white;
+}
+
+#footer .footer-top table tr td a:hover {
+  color: #a883f8;
+  font-weight: bolder;
+}
+
+#footer .footer-bottom {
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 1px solid white;
+}
+
+#footer .footer-bottom p {
+  font-family: "Anka/Coder";
+  font-weight: bolder;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  img {
+    display: none;
+  }
+  #hero {
+    height: 83vh;
+    padding: 25vh 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #hero div {
+    width: 100%;
+  }
+  #hero .intro {
+    padding-left: 0;
+    padding-right: 8rem;
+  }
+  #hero .intro h1 {
+    font-size: 3.5rem;
+    line-height: 3.3rem;
+  }
+  #hero .intro h3 {
+    font-family: "Anka/Coder";
+    font-weight: normal;
+    margin: 3rem 0 3rem 0;
+    font-size: 1.5rem;
+    padding: 0;
+  }
+  #hero .intro a {
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 1rem 2rem;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: white;
+    background: black;
+    -webkit-box-shadow: 8px 8px #a883f8;
+            box-shadow: 8px 8px #a883f8;
+  }
+  #hero .intro a:hover {
+    color: black;
+    background: white;
+    text-decoration: none;
+  }
+  #hero .hero-img img {
+    display: none;
+  }
+  #availibility {
+    margin: 0 10vw 5vw 5vw;
+    background: #a883f8;
+    color: white;
+    border: 2px solid black;
+    padding: 1rem;
+  }
+  #availibility h3 {
+    font-family: "Anka/Coder";
+  }
+  #availibility h3 span {
+    font-family: "Anka/Coder";
+    color: black;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

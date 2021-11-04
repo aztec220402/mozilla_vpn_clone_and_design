@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Zilla Slab";
+}
+
+::-webkit-scrollbar {
+    display: none;
+    // width: 0;
+}
+
+// ========================== FUNCS & VARS ==============================
+$violet: #a883f8;
+
+@mixin links($fontSize) {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: $fontSize;
+    color: black;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+}
+@mixin buttonStyle {
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 0.5rem 2rem;
+    margin-right: 1rem;
+    font-weight: bolder;
+
+    color: black;
+    background: white;
+    &:hover {
+        color: white;
+        background: black;
+        text-decoration: none;
+    }
+}
+@mixin shadowButton {
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 1rem 2rem;
+    // margin-right: 1rem;
+
+    font-size: 1.7rem;
+    font-weight: bolder;
+
+    color: white;
+    background: black;
+
+    box-shadow: 8px 8px $violet;
+
+    &:hover {
+        color: black;
+        background: white;
+        text-decoration: none;
+    }
+}
+@mixin h1 {
+    font-size: 3.5rem;
+    line-height: 3.3rem;
+}
+@mixin h3 {
+    font-family: "Anka/Coder";
+    font-weight: normal;
+    margin: 3rem 0 3rem 0;
+    font-size: 1.5rem;
+}
+body {
+    background: rgb(247, 247, 247);
+}
+
+//========================== HEADER SECTION ============================
+#navbar nav {
+    z-index: 100;
+    background: rgb(255, 255, 255);
+    height: 10vh;
+    padding: 0 1rem;
+    position: fixed;
+    width: 100vw;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    img {
+       height: 50%; 
+    }
+    a {
+        @include links(1rem);
+    }
+    .join {
+        @include buttonStyle();
+    }
+}
+
+// ========================== HERO SECTION =============================
+#hero {
+    height: 90vh;
+    padding: 25vh 3rem;
+    margin-left: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+        // border: 2px solid black;
+        width: 50%;
+        height: 100%;
+    }
+    .intro {
+        // margin-left: 6rem;
+        padding-left: 8rem;
+        h1 {
+            @include h1();
+        }
+        h3 {
+            @include h3();
+        }
+        a {
+            @include shadowButton();
+        }
+    }
+    .hero-img {
+        img {
+            width: 70%;
+            margin-left: 4rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+#availibility {
+    margin: 5vw 10vw;
+    background: $violet;
+    color: white;
+    border: 2px solid black;
+    padding: 1rem;
+
+    h3 {
+        font-family: "Anka/Coder";
+        span {
+            font-family: "Anka/Coder";
+            color: black;
+        }
+    }
+}
+
+//========================== MAIN SECTION ============================
+#main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10vw;
+
+    .feature {
+        margin: 3rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        img {
+            width: 50%
+        }
+        .desc 
+        {
+            margin: 0 5rem;
+            h1 { @include h1(); }
+            h3 { @include h3(); font-size: 1.3rem; }
+            ul { 
+                margin: 2rem 0;
+                li { 
+                    font-weight: bolder;
+                    font-size: 1rem;
+                    font-family: "Anka/Coder";
+                    margin: 0.5rem;
+                }
+            }
+            a { @include shadowButton(); }
+        }
+    }
+
+    .contain {
+        position: relative;
+        .m-content {
+            background: rgb(226, 226, 226);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 4rem 0;
+            img {
+                width: 40%;
+                margin-bottom: 2rem;
+            }
+            .desc {
+                width: 50%;
+                margin: 0 5rem;
+                h1 {
+                    @include h1();
+                }
+                h3 {
+                    @include h3();
+                }
+            }
+
+        }
+        .outline {
+            border: 5px solid black;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            bottom: 2rem;
+            right: 2rem;
+        }
+    }
+}
+
+hr {
+    border: 2px solid black;
+    height: 0;
+    margin: 10vw;
+    background: black;
+}
+
+//========================== FAQ SECTION ============================
+#faq {
+    margin: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 { @include h1(); }
+
+    .ques {
+        border: 2px solid black;
+        text-align: left;
+        width: 50vw;
+        margin: 1.5rem;
+        box-shadow: 1rem 1rem black;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding-right: 2rem; // padding to position '+' symbol 
+        h3 { margin: 1.5rem;}
+    }
+
+    h6 { margin-top: 2rem; font-weight: lighter; }
+}
+
+//========================== FOOTER SECTION ============================
+#footer {
+    color: white;
+    background: black;
+    padding: 5vw 10vw;
+
+    .footer-top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        table {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+
+            tr th {
+                font-family: "Anka/Coder";
+                padding-bottom: 1.5rem;
+            }
+            tr td { 
+                padding: 0.5rem 5rem; 
+                margin: 5rem;
+                a { 
+                    font-family: "Anka/Coder"; 
+                    font-size: 0.8rem;
+                    text-decoration: none; 
+                    color: white; 
+                &:hover { color: $violet; font-weight: bolder; }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        margin-top: 3rem;
+        padding-top: 3rem;
+        border-top: 1px solid white;
+
+        p {
+            font-family: "Anka/Coder";
+            font-weight: bolder;
+            font-size: 0.7rem;
+            text-align: center;
+        }
+    }
+}
+
+//=========================== RESPONSIVE ============================
+@media screen and (max-width: 1000px) {
+    img {
+        display: none;
+    }
+    #hero {
+        height: 83vh;
+        padding: 25vh 0 0 0;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+        div {
+            // border: 2px solid black;
+            width: 100%;
+            // height: 50%;
+        }
+        .intro {
+            padding-left: 0;
+            padding-right: 8rem;
+            h1 {
+                @include h1();
+            }
+            h3 {
+                @include h3();
+                // margin: 0;
+                padding: 0;
+            }
+            a {
+                @include shadowButton();
+            }
+        }
+        .hero-img {
+            img {
+                display: none;
+            }
+        }
+    }
+
+    #availibility {
+        margin: 0 10vw 5vw 5vw;
+        background: $violet;
+        color: white;
+        border: 2px solid black;
+        padding: 1rem;
+    
+        h3 {
+            font-family: "Anka/Coder";
+            span {
+                font-family: "Anka/Coder";
+                color: black;
+            }
+        }
+    }
+}
