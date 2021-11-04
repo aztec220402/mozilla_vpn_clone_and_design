@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,700&family=Zilla+Slab:ital,wght@0,400;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Zilla Slab";
+  font-family: 'Zilla Slab', serif;
 }
 
 ::-webkit-scrollbar {
@@ -93,7 +94,7 @@ body {
 }
 
 #hero .intro h3 {
-  font-family: "Anka/Coder";
+  font-family: 'Roboto Mono', monospace;
   font-weight: normal;
   margin: 3rem 0 3rem 0;
   font-size: 1.5rem;
@@ -132,11 +133,11 @@ body {
 }
 
 #availibility h3 {
-  font-family: "Anka/Coder";
+  font-family: 'Roboto Mono', monospace;
 }
 
 #availibility h3 span {
-  font-family: "Anka/Coder";
+  font-family: 'Roboto Mono', monospace;
   color: black;
 }
 
@@ -177,7 +178,7 @@ body {
 }
 
 #main .feature .desc h3 {
-  font-family: "Anka/Coder";
+  font-family: 'Roboto Mono', monospace;
   font-weight: normal;
   margin: 3rem 0 3rem 0;
   font-size: 1.5rem;
@@ -191,7 +192,7 @@ body {
 #main .feature .desc ul li {
   font-weight: bolder;
   font-size: 1rem;
-  font-family: "Anka/Coder";
+  font-family: 'Roboto Mono', monospace;
   margin: 0.5rem;
 }
 
@@ -246,7 +247,7 @@ body {
 }
 
 #main .contain .m-content .desc h3 {
-  font-family: "Anka/Coder";
+  font-family: 'Roboto Mono', monospace;
   font-weight: normal;
   margin: 3rem 0 3rem 0;
   font-size: 1.5rem;
@@ -349,7 +350,7 @@ hr {
 }
 
 #footer .footer-top table tr th {
-  font-family: "Anka/Coder";
+  font-family: 'Roboto Mono', monospace;
   padding-bottom: 1.5rem;
 }
 
@@ -359,7 +360,7 @@ hr {
 }
 
 #footer .footer-top table tr td a {
-  font-family: "Anka/Coder";
+  font-family: 'Roboto Mono', monospace;
   font-size: 0.8rem;
   text-decoration: none;
   color: white;
@@ -377,7 +378,7 @@ hr {
 }
 
 #footer .footer-bottom p {
-  font-family: "Anka/Coder";
+  font-family: 'Roboto Mono', monospace;
   font-weight: bolder;
   font-size: 0.7rem;
   text-align: center;
@@ -416,7 +417,7 @@ hr {
     line-height: 3.3rem;
   }
   #hero .intro h3 {
-    font-family: "Anka/Coder";
+    font-family: 'Roboto Mono', monospace;
     font-weight: normal;
     margin: 3rem 0 3rem 0;
     font-size: 1.5rem;
@@ -449,10 +450,10 @@ hr {
     padding: 1rem;
   }
   #availibility h3 {
-    font-family: "Anka/Coder";
+    font-family: 'Roboto Mono', monospace;
   }
   #availibility h3 span {
-    font-family: "Anka/Coder";
+    font-family: 'Roboto Mono', monospace;
     color: black;
   }
 }
